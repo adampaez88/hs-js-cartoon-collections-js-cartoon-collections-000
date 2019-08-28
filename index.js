@@ -36,8 +36,9 @@ function findTheCheese (foods) {
 var cheese = 'no cheese!' ;
 var cheeses = ["cheddar", "gouda", "camembert"];
 
-foods.forEach(function(element) {
-  if (element == "cheddar") {
+// grapes, cheddar, gouda
+foods.forEach(function(element) {  // also a type of for loop 
+  if (cheese == 'no cheese!' && element == "cheddar") {
     cheese = element ;
     return cheese ;
   }
@@ -53,3 +54,14 @@ foods.forEach(function(element) {
 });
 return cheese ;
 }
+
+// words = [ "dog", "bear", "cat", "boat" ]
+function wordsWithB(words){
+  var string = []
+  words.forEach(function(element) {
+    if (element[0] == 'b' ) {
+      return string.push(element)
+    }
+  })
+  return string ;
+} // return [ "bear", "boat" ]
