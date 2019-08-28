@@ -9,7 +9,7 @@ function dwarfRollCall(dwarves) {
 
 
 function summonCaptainPlanet(planeteerCalls) {
-var string = planeteerCalls ;
+var string = '' ;
 
 for (let i = 0; i < string.length; i++) {
   string[i] = string[i].toUpperCase() + "!" ;
